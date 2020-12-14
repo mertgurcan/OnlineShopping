@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductCollectionView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="PnT-fF-46S" id="ivu-Ic-4r9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19g-gs-NOy">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PnT-fF-46S">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="46v-x0-UNX">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="PnT-fF-46S" firstAttribute="top" secondItem="19g-gs-NOy" secondAttribute="top" id="1gV-fO-2wV"/>
+                        <constraint firstAttribute="trailing" secondItem="PnT-fF-46S" secondAttribute="trailing" id="ZOh-mc-WLQ"/>
+                        <constraint firstItem="PnT-fF-46S" firstAttribute="leading" secondItem="19g-gs-NOy" secondAttribute="leading" id="iT9-eu-umE"/>
+                        <constraint firstAttribute="bottom" secondItem="PnT-fF-46S" secondAttribute="bottom" id="uFU-YZ-5hs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="19g-gs-NOy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HPA-F9-Nqx"/>
+                <constraint firstItem="19g-gs-NOy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RY8-zU-QaR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="19g-gs-NOy" secondAttribute="bottom" id="tPd-dD-lws"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="19g-gs-NOy" secondAttribute="trailing" id="xls-fm-CjP"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryTableView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryTableView" destination="bGU-Yu-cAb" id="kYV-M4-VxV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jm1-CM-9iv">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bGU-Yu-cAb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bGU-Yu-cAb" firstAttribute="leading" secondItem="jm1-CM-9iv" secondAttribute="leading" id="Len-nc-69r"/>
+                        <constraint firstAttribute="trailing" secondItem="bGU-Yu-cAb" secondAttribute="trailing" id="U2P-EF-g2B"/>
+                        <constraint firstItem="bGU-Yu-cAb" firstAttribute="top" secondItem="jm1-CM-9iv" secondAttribute="top" id="daf-L3-PO3"/>
+                        <constraint firstAttribute="bottom" secondItem="bGU-Yu-cAb" secondAttribute="bottom" id="dmg-ti-GEH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jm1-CM-9iv" secondAttribute="bottom" id="Rfg-K5-JOX"/>
+                <constraint firstItem="jm1-CM-9iv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ve1-Or-BtR"/>
+                <constraint firstItem="jm1-CM-9iv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lvw-Ok-U7S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jm1-CM-9iv" secondAttribute="trailing" id="q2U-19-Lpa"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="yh4-Z8-VW4" id="aHe-5M-rWa"/>
+                <outlet property="patternView" destination="caG-6u-Hrv" id="7bs-8f-N7P"/>
+                <outlet property="searchBar" destination="Est-ws-5GR" id="Wuf-oZ-uVl"/>
+                <outlet property="shadowLayer" destination="iWQ-Ic-LJ3" id="k7b-cO-5Lv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iID-8a-vxp">
+                    <rect key="frame" x="0.0" y="418.5" width="414" height="59"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWQ-Ic-LJ3" userLabel="ShadowLayer">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-Z8-VW4" userLabel="BackgroundView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" placeholder="Kategori veya ürün ara" translatesAutoresizingMaskIntoConstraints="NO" id="Est-ws-5GR">
+                                            <rect key="frame" x="5" y="0.0" width="404" height="56"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </searchBar>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caG-6u-Hrv" customClass="PatternView" customModule="OnlineShopping" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="56" width="414" height="3"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="3" id="Pb7-fO-F45"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="caG-6u-Hrv" secondAttribute="bottom" id="1uU-PQ-j34"/>
+                                        <constraint firstItem="caG-6u-Hrv" firstAttribute="leading" secondItem="yh4-Z8-VW4" secondAttribute="leading" id="L9N-87-V7u"/>
+                                        <constraint firstItem="Est-ws-5GR" firstAttribute="leading" secondItem="yh4-Z8-VW4" secondAttribute="leading" constant="5" id="Ld6-FC-iPo"/>
+                                        <constraint firstItem="caG-6u-Hrv" firstAttribute="top" secondItem="Est-ws-5GR" secondAttribute="bottom" id="MEj-CR-vJh"/>
+                                        <constraint firstItem="Est-ws-5GR" firstAttribute="top" secondItem="yh4-Z8-VW4" secondAttribute="top" id="ZvJ-a0-Jnd"/>
+                                        <constraint firstAttribute="trailing" secondItem="Est-ws-5GR" secondAttribute="trailing" constant="5" id="bwu-3P-g7X"/>
+                                        <constraint firstAttribute="trailing" secondItem="caG-6u-Hrv" secondAttribute="trailing" id="cUx-Ty-bwE"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="yh4-Z8-VW4" firstAttribute="leading" secondItem="iWQ-Ic-LJ3" secondAttribute="leading" id="8OR-QS-1Hj"/>
+                                <constraint firstAttribute="trailing" secondItem="yh4-Z8-VW4" secondAttribute="trailing" id="VbA-F2-Sxi"/>
+                                <constraint firstAttribute="bottom" secondItem="yh4-Z8-VW4" secondAttribute="bottom" id="hbk-Mu-z0M"/>
+                                <constraint firstItem="yh4-Z8-VW4" firstAttribute="top" secondItem="iWQ-Ic-LJ3" secondAttribute="top" id="hgc-3p-5Yq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="iWQ-Ic-LJ3" firstAttribute="top" secondItem="iID-8a-vxp" secondAttribute="top" id="KmG-sv-OR9"/>
+                        <constraint firstAttribute="trailing" secondItem="iWQ-Ic-LJ3" secondAttribute="trailing" id="clA-3I-qR7"/>
+                        <constraint firstAttribute="bottom" secondItem="iWQ-Ic-LJ3" secondAttribute="bottom" id="fGn-po-NGc"/>
+                        <constraint firstItem="iWQ-Ic-LJ3" firstAttribute="leading" secondItem="iID-8a-vxp" secondAttribute="leading" id="o5d-y3-W8C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iID-8a-vxp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MIv-sT-O4X"/>
+                <constraint firstItem="iID-8a-vxp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OI0-g1-NTq"/>
+                <constraint firstItem="iID-8a-vxp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="US2-Ru-B7s"/>
+                <constraint firstItem="iID-8a-vxp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fEJ-FX-gy9"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

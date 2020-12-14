@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterBannerView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="7kO-nk-kRs" id="wsn-FZ-cuc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-I0-Asb">
+                    <rect key="frame" x="0.0" y="400.5" width="414" height="95"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-z0-rSc" userLabel="BackgroundView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategoriler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTu-yu-vLu">
+                                    <rect key="frame" x="165.5" y="31.5" width="83.5" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kO-nk-kRs">
+                                    <rect key="frame" x="25" y="37.5" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="dtw-P3-b00"/>
+                                        <constraint firstAttribute="height" constant="15" id="vFd-FO-Qrs"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="Vector"/>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4L-1F-bwg">
+                                    <rect key="frame" x="0.0" y="88" width="414" height="2"/>
+                                    <color key="backgroundColor" red="0.91739982369999995" green="0.93453794720000005" blue="0.99101597070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="YA5-yx-WWs"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="b4L-1F-bwg" firstAttribute="leading" secondItem="zL5-z0-rSc" secondAttribute="leading" id="1Rt-hm-8N2"/>
+                                <constraint firstItem="7kO-nk-kRs" firstAttribute="leading" secondItem="zL5-z0-rSc" secondAttribute="leading" constant="25" id="85P-xa-b56"/>
+                                <constraint firstAttribute="height" constant="90" id="EDH-mn-ER1"/>
+                                <constraint firstAttribute="trailing" secondItem="b4L-1F-bwg" secondAttribute="trailing" id="Iw2-1T-9ZD"/>
+                                <constraint firstAttribute="bottom" secondItem="b4L-1F-bwg" secondAttribute="bottom" id="JN1-EL-Hb2"/>
+                                <constraint firstItem="dTu-yu-vLu" firstAttribute="centerX" secondItem="zL5-z0-rSc" secondAttribute="centerX" id="QlD-c5-zh9"/>
+                                <constraint firstItem="7kO-nk-kRs" firstAttribute="centerY" secondItem="zL5-z0-rSc" secondAttribute="centerY" id="p5S-qB-XLG"/>
+                                <constraint firstItem="dTu-yu-vLu" firstAttribute="centerY" secondItem="zL5-z0-rSc" secondAttribute="centerY" id="vee-Hc-U42"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zL5-z0-rSc" secondAttribute="bottom" constant="5" id="LJa-4i-u5r"/>
+                        <constraint firstAttribute="trailing" secondItem="zL5-z0-rSc" secondAttribute="trailing" id="fp6-eI-UBz"/>
+                        <constraint firstItem="zL5-z0-rSc" firstAttribute="top" secondItem="Jj9-I0-Asb" secondAttribute="top" id="nX1-Ph-7Mp"/>
+                        <constraint firstItem="zL5-z0-rSc" firstAttribute="leading" secondItem="Jj9-I0-Asb" secondAttribute="leading" id="py0-4t-7T8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jj9-I0-Asb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bxX-Ot-fgU"/>
+                <constraint firstItem="Jj9-I0-Asb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fTa-JX-rTv"/>
+                <constraint firstItem="Jj9-I0-Asb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="u2R-bg-4H1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jj9-I0-Asb" secondAttribute="trailing" id="vmG-BU-UW9"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Vector" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

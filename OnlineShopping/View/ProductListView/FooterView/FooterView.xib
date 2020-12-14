@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooterView" customModule="OnlineShopping" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHF-uB-NaW">
+                    <rect key="frame" x="0.0" y="420" width="414" height="56"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Gz7-Gi-RoI">
+                            <rect key="frame" x="20" y="16" width="374" height="24"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anasayfa" translatesAutoresizingMaskIntoConstraints="NO" id="jP9-Tg-muQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="24"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kategori" translatesAutoresizingMaskIntoConstraints="NO" id="Bcc-L9-JmL">
+                                    <rect key="frame" x="100" y="0.0" width="74.5" height="24"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siparis" translatesAutoresizingMaskIntoConstraints="NO" id="N1u-tC-5ee">
+                                    <rect key="frame" x="199.5" y="0.0" width="75" height="24"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profil" translatesAutoresizingMaskIntoConstraints="NO" id="rxf-NG-IvC">
+                                    <rect key="frame" x="299.5" y="0.0" width="74.5" height="24"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Gz7-Gi-RoI" secondAttribute="trailing" constant="20" id="iO9-1X-pJU"/>
+                        <constraint firstItem="Gz7-Gi-RoI" firstAttribute="leading" secondItem="BHF-uB-NaW" secondAttribute="leading" constant="20" id="n6U-Pz-yR7"/>
+                        <constraint firstAttribute="height" constant="56" id="rE0-H1-E7t"/>
+                        <constraint firstItem="Gz7-Gi-RoI" firstAttribute="centerY" secondItem="BHF-uB-NaW" secondAttribute="centerY" id="wpF-pA-LFP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BHF-uB-NaW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7NA-EB-P5I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BHF-uB-NaW" secondAttribute="trailing" id="a4k-qF-AU3"/>
+                <constraint firstItem="BHF-uB-NaW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="azO-Hl-d64"/>
+                <constraint firstItem="BHF-uB-NaW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hEF-xu-yFI"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="anasayfa" width="24" height="24"/>
+        <image name="kategori" width="24" height="24"/>
+        <image name="profil" width="24" height="24"/>
+        <image name="siparis" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonButtonView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="Cez-BX-xg8" id="ZMe-Ls-fGp"/>
+                <outlet property="buttonView" destination="hN7-W9-1bq" id="8oZ-vA-QAw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-kb-4fa">
+                    <rect key="frame" x="0.0" y="420" width="414" height="56"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cez-BX-xg8" userLabel="BackgroundView">
+                            <rect key="frame" x="20" y="0.0" width="374" height="56"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN7-W9-1bq">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="otG-3G-ycC"/>
+                                    </constraints>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="hN7-W9-1bq" firstAttribute="top" secondItem="Cez-BX-xg8" secondAttribute="top" id="N1a-Ke-UA1"/>
+                                <constraint firstItem="hN7-W9-1bq" firstAttribute="leading" secondItem="Cez-BX-xg8" secondAttribute="leading" id="eY6-87-szG"/>
+                                <constraint firstAttribute="bottom" secondItem="hN7-W9-1bq" secondAttribute="bottom" id="mmk-8k-aEe"/>
+                                <constraint firstAttribute="trailing" secondItem="hN7-W9-1bq" secondAttribute="trailing" id="vGp-NZ-Zy9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Cez-BX-xg8" secondAttribute="bottom" id="2bo-wO-vUH"/>
+                        <constraint firstItem="Cez-BX-xg8" firstAttribute="leading" secondItem="ca2-kb-4fa" secondAttribute="leading" constant="20" id="67h-XX-Owu"/>
+                        <constraint firstAttribute="trailing" secondItem="Cez-BX-xg8" secondAttribute="trailing" constant="20" id="fHg-Gv-SM6"/>
+                        <constraint firstItem="Cez-BX-xg8" firstAttribute="top" secondItem="ca2-kb-4fa" secondAttribute="top" id="tQ4-Hg-poz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ca2-kb-4fa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NVY-UE-DBa"/>
+                <constraint firstItem="ca2-kb-4fa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mUH-3r-8iC"/>
+                <constraint firstItem="ca2-kb-4fa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mY3-uD-V4i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ca2-kb-4fa" secondAttribute="trailing" id="pOJ-pS-rpL"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

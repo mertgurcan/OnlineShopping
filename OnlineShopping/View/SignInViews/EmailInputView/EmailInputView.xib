@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailInputView" customModule="OnlineShopping" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="2Am-iK-fh0" id="yIz-te-tMT"/>
+                <outlet property="emailTextField" destination="epZ-1H-JiA" id="Cot-Ij-3nY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLk-o2-pJK">
+                    <rect key="frame" x="0.0" y="421" width="414" height="54"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Am-iK-fh0" userLabel="BackgroundView">
+                            <rect key="frame" x="30" y="0.0" width="354" height="54"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-1H-JiA">
+                                    <rect key="frame" x="20" y="10" width="314" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="oWU-Gx-Pwt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="epZ-1H-JiA" firstAttribute="top" secondItem="2Am-iK-fh0" secondAttribute="top" constant="10" id="Yri-C2-c6l"/>
+                                <constraint firstItem="epZ-1H-JiA" firstAttribute="leading" secondItem="2Am-iK-fh0" secondAttribute="leading" constant="20" id="eQ5-9j-2aa"/>
+                                <constraint firstAttribute="trailing" secondItem="epZ-1H-JiA" secondAttribute="trailing" constant="20" id="hxi-Ff-z71"/>
+                                <constraint firstAttribute="bottom" secondItem="epZ-1H-JiA" secondAttribute="bottom" constant="10" id="yZp-yj-1UI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="2Am-iK-fh0" firstAttribute="leading" secondItem="ZLk-o2-pJK" secondAttribute="leading" constant="30" id="Qou-e3-h9k"/>
+                        <constraint firstItem="2Am-iK-fh0" firstAttribute="top" secondItem="ZLk-o2-pJK" secondAttribute="top" id="ej4-Jl-58K"/>
+                        <constraint firstAttribute="trailing" secondItem="2Am-iK-fh0" secondAttribute="trailing" constant="30" id="emE-OT-ied"/>
+                        <constraint firstAttribute="bottom" secondItem="2Am-iK-fh0" secondAttribute="bottom" id="suF-9z-huv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZLk-o2-pJK" secondAttribute="trailing" id="5Pn-b5-SRk"/>
+                <constraint firstItem="ZLk-o2-pJK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B5J-Ld-cZg"/>
+                <constraint firstItem="ZLk-o2-pJK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QRD-L9-hGj"/>
+                <constraint firstItem="ZLk-o2-pJK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qiY-4H-1Jz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
